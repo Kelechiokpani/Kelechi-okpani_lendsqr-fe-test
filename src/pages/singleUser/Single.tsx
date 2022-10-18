@@ -5,7 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 
 const Single: React.JSXElementConstructor<any> = (id) => {
     const [userData, setUserData] = React.useState([]);
-    
+
     useEffect(() => {
         fetch(`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${id}`).then(
             response => response.json()
@@ -15,7 +15,7 @@ const Single: React.JSXElementConstructor<any> = (id) => {
                     console.log(userData)
                 })
         )
-    }, [])
+    }, [id, userData])
 
 
     return (

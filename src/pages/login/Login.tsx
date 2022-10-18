@@ -43,7 +43,7 @@ const Login: React.JSXElementConstructor<any> = () => {
                         </div>
                         <div className="text-center p-t-12">
                                 <span className="txt1">
-                                    <a className="txt1" href="#"> Forgot Password? </a>
+                                    <a className="txt1" href="/home"> Forgot Password? </a>
                                 </span>
 
                         </div>
