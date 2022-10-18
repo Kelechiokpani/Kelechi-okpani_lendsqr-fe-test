@@ -27,7 +27,7 @@ const List: React.JSXElementConstructor<any> = () => {
             </div>
         )
     }
-    if (error) return <div>Error</div>
+  
 
     return (
 
