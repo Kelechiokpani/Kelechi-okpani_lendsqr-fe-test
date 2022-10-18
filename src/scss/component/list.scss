@@ -1,0 +1,13 @@
+$extraSmallDevice: 541px;
+.list {
+  display: flex;
+  width: 100%;
+
+  @media screen and (max-width: $extraSmallDevice) {
+    overflow: hidden;
+  }
+
+  .listContainer {
+    flex: 6;
+  }
+}

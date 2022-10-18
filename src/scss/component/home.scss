@@ -1,0 +1,60 @@
+$extraSmallDevice: 541px;
+$smallDevice: 600px;
+$smallDevicePortrait: 600px;
+$mediumDevice: 768px;
+$largeDevice: 992px;
+$extraLargeDevice: 1200px;
+//@media  screen and (min-width: $extraSmallDevice)
+//@media  screen and (max-width: $smallDevice)
+//@media  screen and (min-width: $smallDevicePortrait)
+//@media  screen and (min-width: $mediumDevice)
+//@media  screen and (min-width: $largeDevice)
+//@media  screen and (min-width: $extraLargeDevice)
+
+
+.home {
+  display: flex;
+  width: 100%;
+  @media screen and (max-width: $extraSmallDevice) {
+    overflow: hidden;
+  }
+
+  .homeContainer {
+    flex: 6;
+
+    .widgets,
+    .charts {
+      display: flex;
+      padding: 20px;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      @media screen and (max-width: $extraSmallDevice) {
+        display: block;
+        overflow: hidden;
+        //padding: 1rem 4rem 1rem 1rem;
+      }
+
+    }
+
+    .listContainer {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      margin: 10px;
+
+      @media screen and (max-width: $extraSmallDevice) {
+        display: block;
+        overflow: hidden;
+      }
+
+      .listTitle {
+        font-weight: 500;
+        color: gray;
+        margin-bottom: 15px;
+      }
+
+
+    }
+  }
+}
