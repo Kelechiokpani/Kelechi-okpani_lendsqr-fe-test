@@ -165,7 +165,6 @@ const SingleUsers: ({userData}: any) => JSX.Element = (userData) => {
                                     </div>
                                 </div>
                                 <div className="userDetails">
-                                    <h1 className="title"></h1>
                                     <div className="editButton">edit</div>
                                     <div className="item">
                                         <div className="details">
