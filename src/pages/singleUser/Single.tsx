@@ -19,7 +19,7 @@ const Single: React.JSXElementConstructor<any> = () => {
                     setLoading(false)
                 })
         )
-    }, [])
+    }, [userData])
 
     if (loading && !userData) {
         return (
