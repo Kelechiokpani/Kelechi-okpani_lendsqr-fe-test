@@ -15,7 +15,7 @@ const headers = [
     {id: 1232, label: "EDIT"},
 ]
 
-const TableData = ({tableData}: any) => {
+const TableData = ({tableData,}: any) => {
     const [currentItems, setCurrentItems] = useState([]);
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
@@ -56,10 +56,12 @@ const TableData = ({tableData}: any) => {
                             <td data-label="phoneNumber">{row.phoneNumber}</td>
                             <td data-label="lastActiveDate">{row.lastActiveDate}</td>
                             <td>
-                                <p className="edit">edit</p>
+                                <Link to='/1' className="link">
+                                    <p className="edit">edit</p>
+                                </Link>
                             </td>
                             <td>
-                                <Link to="users/:id" className="link">
+                                <Link to='/2' className="link">
                                     <p className="view">view User</p>
                                 </Link>
                             </td>
